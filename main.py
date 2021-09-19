@@ -1,24 +1,13 @@
-import machine
-import machine
-import time
-import os
-import adc_manager
-import _thread
-import Lib_RTC
-import Lib_FIle
-import DS1302
+import machine, esp32, network, ujson, time, ubinascii
+import Librerias.adc_manager as adc_manager
+import Librerias.Lib_FIle as Lib_FIle
+import Librerias.Lib_RTC as Lib_RTC
 import json
-import esp32
-import plus_numbers
+import Librerias.plus_numbers as plus_numbers
 global num,speed,pluviometer_value,anemometer_value,timer_pluviometer, solar_radiaton_value
-import network
 import utime as time
-from umqttsimple import MQTTClient
-import uping
-import ujson
-import ubinascii
-
-
+from Librerias.umqttsimple import MQTTClient
+import Librerias.uping as uping
 
 global mqtt_server,port, user
 mqtt_server = "industrial.api.ubidots.com"
