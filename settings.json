@@ -1,0 +1,10 @@
+{
+  "adcmin": 0,
+  "adcmax": 3200,
+  "valuemin": 0,
+  "valuemax": 3.3,
+  "ssid": "HenryDM",
+  "password_wlan": "123456789",
+  "token": "",
+  "sample_time_sec": 10
+}
